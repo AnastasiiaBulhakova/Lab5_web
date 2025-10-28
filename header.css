@@ -1,0 +1,64 @@
+@import url("base.css");
+
+header {
+    display: flex;
+    height: 85px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.btn {
+    display: flex;
+    color: black;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 13px 50px;
+}
+
+@media (max-width: 960px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    nav {
+        order: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: -20px;
+    }
+
+    .btn {
+        order: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
