@@ -14,6 +14,8 @@
     flex: 1;
     max-width: 650px;
     height: 600px;
+    display: flex;
+    justify-content: center;
 }
 
 .green-square {
@@ -29,12 +31,12 @@
 .main-img {
     position: absolute;
     top: -40px;
-    left: 100px;
     width: 420px;
     height: 640px;
     border-radius: 18px;
     z-index: 2;
     object-fit: cover;
+
 }
 
 .white-square {
@@ -53,15 +55,19 @@
     text-align: center;
     color: #000;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text-block h4 {
     font-size: 15px;
     font-weight: 600;
+
 }
 
 .line {
-    margin: 8px auto;
+    margin: 8px auto 20px auto;
     width: 111px;
     height: 1px;
     background-color: black;
@@ -69,10 +75,6 @@
 
 .green-square2,
 .main-img2 {
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 57px;
     height: 57px;
     border-radius: 50%;
@@ -89,8 +91,9 @@
 }
 
 .text-block h5 {
+    margin-top: 10px;
     font-size: 12px;
-    margin-top: 90px;
+
 }
 
 .text-block h3 {
@@ -100,8 +103,6 @@
 
 .text-block ul {
 
-    padding: 0;
-    margin: 16px 0 0 85px;
     text-align: left;
 }
 
@@ -134,4 +135,31 @@
 
 .forth-right button {
     align-self: flex-start;
+}
+
+@media (max-width: 1024px) {
+
+    .forth {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .green-square,
+    .main-img {
+        display: none;
+    }
+
+    .forth-left {
+
+        height: auto;
+        align-items: center
+    }
+
+
+    .white-square {
+        position: static;
+
+    }
+
 }

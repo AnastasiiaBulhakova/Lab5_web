@@ -35,3 +35,26 @@
     display: block;
     flex: 1;
 }
+
+@media (max-width: 1670px) {
+    .third {
+        justify-content: center
+    }
+
+    .third-content {
+
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .third-content h2 {
+        font-size: calc(1rem + 5vw);
+
+    }
+
+    .third img {
+
+        display: none;
+    }
+}
